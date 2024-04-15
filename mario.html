@@ -8,13 +8,22 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Jogo do Mario</h1>
+    
     <div class="container-jogo">
+        <h1>Jogo do Mario</h1>
        <img src="imagens/pipe.png" class="pipe">
        <img src="imagens/mario.gif" class="mario ">
        <img src="imagens/clouds.png" class="clouds">
        <img src="imagens/clouds.png" class="clouds2">
+       <!-- <img src="imagens/game-over.png" alt=""> -->
+  
+    <button id="button" onclick="reload">Recomeçar</button>
 
     </div>
 </body>
+<script>
+
+document.querySelector('#button').addEventListener('click',  function reload() {
+    location.reload()
+})</script>
 </html>
